@@ -7,17 +7,52 @@ body {
   color: #1f2937
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+}
+
 .heroSection,
 .nav,
 .footer {
-    width: 100VW;
     background-color: #1f2937;
 }
 
-.navContainer {
-    width: 1000px;
-    padding: 16px;
+.nav,
+.heroSection,
+.infoSection,
+.quoteSection,
+.ctaSection,
+.footer {
+    width: 100VW;
     display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.heroSection,
+.infoSection,
+.quoteSection,
+.ctaSection {
+    padding: 64px 0px 64px 0px;
+}
+
+.sectionBoundary {
+    min-width: 60vw;
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.navContainer {
+    padding: 16px 0px 16px 0px;
+    display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -31,7 +66,7 @@ body {
 
 .navList {
     display: flex;
-    gap: 16px;
+    gap: 24px;
     list-style-type: none;
     margin: 0;
     padding: 0
@@ -42,10 +77,36 @@ body {
     color: #e5e7eb;
 }
 
+.heroContainer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.heroTextContainer {
+    max-width: 450px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+
+.heroImgContainer {
+    min-width: 500px;
+    min-height: 200px;
+    background-color: #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h1 {
     font-size: 48px;
     font-weight: 900;
     color: #f9faf8;
+    margin: 0;
+    padding-bottom: 16px;
 }
 
 .whiteText {
@@ -54,34 +115,47 @@ h1 {
 
 .solidBtn {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 5px 15px;
     background-color: #3882f6;
     color: #f9faf8;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 18px;
     font-weight: 700;
+    margin-top: 16px;
 }
 
-.quoteSection {
-    width: 100VW;
-    background-color: #e5e7eb;
+.infoContainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
 }
 
 h2 {
     font-size: 36px;
     font-weight: 900;
+    padding-bottom: 16px;
+}
+
+.infoTextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .infoCardSetContainer {
     display: flex;
-    gap: 16px;
+    flex-direction: row wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    align-content: center;
 }
 
 .infoCard {
-    max-width: 150px;
+    max-width: 175px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    align-content: flex-start;
 }
 
 #centerText {
@@ -89,27 +163,65 @@ h2 {
 }
 
 .bluestrokeSquare {
-    width: 150px;
-    height: 150px;
-    border: 3px solid #3882f6;
-    border-radius: 10px;
+    min-width: 150px;
+    min-height: 150px;
+    border: 4px solid #3882f6;
+    border-radius: 15px;
+    margin-bottom: 16px;
 }
 
-.quote p {
+.quoteSection {
+    background-color: #e5e7eb;
+}
+
+.quoteContainer {
+    width: 48VW;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    align-self: center;
+}
+
+.quote {
     font-size: 36px;
     font-style: italic;
     font-weight: 100;
     color: #1f2937;
 }
 
-.quote cite {
+.cite {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 900;
     color: #1f2937;
+    margin-top: 16px;
+}
+
+.ctaContainer {
+    background-color: #3882f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 48px 96px 48px 96px;
+}
+
+.boldwhiteText {
+    color: #f9faf8;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.outlineBtn {
+    display: inline-block;
+    padding: 5px 30px;
+    border: 2px solid #e5e7eb;
+    color: #e5e7eb;
+    background-color: #3882f6;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 32px 0px 32px 0px;
 }
