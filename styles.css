@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,500');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  color: #1f2937
+}
+
+.heroSection,
+.nav,
+.footer {
+    width: 100VW;
+    background-color: #1f2937;
+}
+
+.navContainer {
+    width: 1000px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logoText {
+    font-size: 24px;
+    text-decoration: none;
+    color: #f9faf8;
+    font-weight: 700;
+}
+
+.navList {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+.navLink {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.whiteText {
+    color: #f9faf8;
+}
+
+.solidBtn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.quoteSection {
+    width: 100VW;
+    background-color: #e5e7eb;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.infoCardSetContainer {
+    display: flex;
+    gap: 16px;
+}
+
+.infoCard {
+    max-width: 150px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#centerText {
+    text-align: center;
+}
+
+.bluestrokeSquare {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+}
+
+.quote p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1f2937;
+}
+
+.quote cite {
+    font-style: normal;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
